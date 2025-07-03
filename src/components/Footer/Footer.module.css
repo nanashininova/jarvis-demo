@@ -1,0 +1,60 @@
+/* Footer Row Layout */
+.footerRow {
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+.copyright {
+  color: #b3b3b3;
+  font-size: 0.98rem;
+  font-family: 'Fira Mono', 'Menlo', 'Monaco', 'Consolas', monospace;
+  margin-top: 52px;
+  margin-right: 4vw;
+  white-space: nowrap;
+  align-self: flex-end;
+}
+/* Info Columns for Footer */
+.infoColumns {
+  display: flex;
+  flex-direction: row;
+  gap: 64px;
+  margin: 48px 0 0 0;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100vw;
+  max-width: none;
+  padding-left: 4vw;
+  box-sizing: border-box;
+}
+
+.infoCol {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-width: 120px;
+}
+
+.infoHeading {
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  font-family: 'Fira Mono', 'Menlo', 'Monaco', 'Consolas', monospace;
+  letter-spacing: 0.03em;
+}
+
+.infoRow {
+  color: #fff;
+  font-size: 1rem;
+  margin-bottom: 6px;
+  font-family: 'Fira Mono', 'Menlo', 'Monaco', 'Consolas', monospace;
+  opacity: 0.85;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+.infoRow:hover {
+  color: #b3b3b3;
+}

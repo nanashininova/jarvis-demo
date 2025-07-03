@@ -1,0 +1,107 @@
+/* Transparent Navbar styles */
+.navbar {
+  width: 100vw;
+  min-width: 100vw;
+  max-width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 48px;
+  height: 64px;
+  background: transparent;
+  box-sizing: border-box;
+  transition: background 0.3s, opacity 0.4s cubic-bezier(.4,0,.2,1);
+}
+
+.left {
+  font-family: 'Fira Mono', 'Menlo', 'Monaco', 'Consolas', monospace;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--navbar-text, #fff);
+  letter-spacing: 0.04em;
+  text-decoration: none;
+  outline: none;
+}
+
+.center {
+  display: flex;
+  gap: 40px;
+}
+
+.link {
+  font-family: 'Fira Mono', 'Menlo', 'Monaco', 'Consolas', monospace;
+  font-size: 1.1rem;
+  color: var(--navbar-text, #fff);
+  text-decoration: none;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  transition: color 0.2s;
+  position: relative;
+}
+.link:hover {
+  color: #b3b3b3;
+}
+
+.joinBtn {
+  font-family: 'Fira Mono', 'Menlo', 'Monaco', 'Consolas', monospace;
+  font-size: 1.1rem;
+  color: var(--navbar-text, #fff);
+  background: transparent;
+  border: none;
+  border-radius: 8px;
+  padding: 0.5em 1.8em;
+  margin-left: 32px;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.2s cubic-bezier(.4,0,.2,1);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5em;
+  position: relative;
+}
+.arrow {
+  opacity: 0;
+  margin-left: 0.2em;
+  font-size: 1.1em;
+  transition: opacity 0.2s cubic-bezier(.4,0,.2,1);
+  display: flex;
+  align-items: center;
+}
+.joinBtn:hover, .joinBtn:focus {
+  background: #fff;
+  color: #111;
+}
+.joinBtn:hover .arrow, .joinBtn:focus .arrow {
+  opacity: 1;
+}
+
+@media (max-width: 900px) {
+  .navbar {
+    padding: 0 16px;
+    height: 56px;
+  }
+  .left {
+    font-size: 1.3rem;
+  }
+  .center {
+    gap: 18px;
+  }
+  .joinBtn {
+    padding: 0.4em 1.2em;
+    margin-left: 12px;
+    font-size: 1rem;
+  }
+}
+
+/* Light/dark mode support */
+:root {
+  --navbar-text: #fff;
+}
+body.light {
+  --navbar-text: #23243b;
+}

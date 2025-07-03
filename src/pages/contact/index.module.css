@@ -1,0 +1,137 @@
+.contactPage {
+  min-height: 100vh;
+  background: #111;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 1rem 2rem 1rem;
+}
+
+h1 {
+  font-size: 2.2rem;
+  margin-bottom: 1.2rem;
+  color: #fff;
+}
+
+p {
+  font-size: 1.1rem;
+  color: #ccc;
+  max-width: 500px;
+  text-align: center;
+}
+
+.contactContainer {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 1rem 2rem 1rem;
+  gap: 3rem;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-width: 260px;
+  max-width: 320px;
+  flex: 1;
+}
+
+.heading {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1.2rem;
+  letter-spacing: 1px;
+  color: #fff;
+}
+
+.subtext {
+  font-size: 1.1rem;
+  color: #ccc;
+  margin-bottom: 0.3rem;
+}
+
+.email {
+  font-size: 1.1rem;
+  color: #4fc3f7;
+  word-break: break-all;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  background: #181818;
+  padding: 2rem 2.5rem;
+  border-radius: 1.2rem;
+  box-shadow: 0 2px 24px 0 #0006;
+  min-width: 320px;
+  max-width: 400px;
+  flex: 1;
+  gap: 0.7rem;
+}
+
+.form label {
+  font-size: 1rem;
+  color: #fff;
+  margin-bottom: 0.2rem;
+  font-weight: 500;
+}
+
+.form input,
+.form textarea {
+  background: #222;
+  color: #fff;
+  border: 1px solid #333;
+  border-radius: 0.5rem;
+  padding: 0.7rem 1rem;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  outline: none;
+  resize: none;
+  transition: border 0.2s;
+}
+
+.form input:focus,
+.form textarea:focus {
+  border: 1.5px solid #4fc3f7;
+}
+
+.form button {
+  margin-top: 0.7rem;
+  background: #4fc3f7;
+  color: #111;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.8rem 1.2rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.form button:hover {
+  background: #039be5;
+  color: #fff;
+}
+
+@media (max-width: 800px) {
+  .contactContainer {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 2.5rem;
+  }
+  .form, .left {
+    max-width: 100%;
+    min-width: 0;
+  }
+}

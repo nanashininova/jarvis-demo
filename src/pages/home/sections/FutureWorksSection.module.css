@@ -1,0 +1,67 @@
+/* More Works Button styles */
+.moreWorksBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6em;
+  margin: 32px auto 0 auto;
+  padding: 0.7em 2.2em;
+  font-family: 'Fira Mono', 'Menlo', 'Monaco', 'Consolas', monospace;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #fff;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+  outline: none;
+  box-shadow: none;
+}
+
+.moreWorksBtn:hover, .moreWorksBtn:focus {
+  background: #fff;
+  color: #111216;
+}
+
+.moreWorksBtn:hover .arrow, .moreWorksBtn:focus .arrow {
+  color: #111216;
+}
+
+.arrow {
+  font-size: 1.3em;
+  color: #fff;
+  transition: color 0.2s;
+  margin-left: 0.3em;
+}
+.futureWorksSection {
+  width: 100vw;
+  min-width: 100vw;
+  max-width: 100vw;
+  background: #111216;
+  padding: 0 0 64px 0;
+  margin: 0;
+  box-sizing: border-box;
+  display: block;
+}
+
+.heading {
+  color: #fff;
+  font-size: 2.8rem;
+  font-family: 'Fira Mono', 'Menlo', 'Monaco', 'Consolas', monospace;
+  font-weight: 700;
+  text-align: center;
+  margin: 0;
+  padding: 64px 0 32px 0;
+  letter-spacing: 0.04em;
+}
+
+@media (max-width: 700px) {
+  .heading {
+    font-size: 1.5rem;
+    padding: 32px 0 16px 0;
+  }
+  .futureWorksSection {
+    padding-bottom: 32px;
+  }
+}
