@@ -1,26 +1,35 @@
 import React from "react";
 import styles from "./Footer.module.css";
 
-const Footer = () => (
-  <div className={styles.footerRow}>
-    <div className={styles.infoColumns}>
-      <div className={styles.infoCol}>
-        <div className={styles.infoHeading}>About</div>
-        <div className={styles.infoRow}>Works</div>
-        <div className={styles.infoRow}>About</div>
-        <div className={styles.infoRow}>Contact</div>
+const Footer = () => {
+  // Fire custom events on mouse enter/leave
+  const handleMouseEnter = () => {
+    window.dispatchEvent(new Event('futureworks-cursor-leave'));
+  };
+  const handleMouseLeave = () => {
+    window.dispatchEvent(new Event('futureworks-cursor-enter'));
+  };
+  return (
+    <div className={styles.footerRow} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+      <div className={styles.infoColumns}>
+        <div className={styles.infoCol}>
+          <div className={styles.infoHeading}>About</div>
+          <div className={styles.infoRow}>Works</div>
+          <div className={styles.infoRow}>About</div>
+          <div className={styles.infoRow}>Contact</div>
+        </div>
+        <div className={styles.infoCol}>
+          <div className={styles.infoHeading}>Socials</div>
+          <div className={styles.infoRow}>Instagram</div>
+          <div className={styles.infoRow}>Linkedin</div>
+          <div className={styles.infoRow}>Twitter</div>
+        </div>
       </div>
-      <div className={styles.infoCol}>
-        <div className={styles.infoHeading}>Socials</div>
-        <div className={styles.infoRow}>Instagram</div>
-        <div className={styles.infoRow}>Linkedin</div>
-        <div className={styles.infoRow}>Twitter</div>
+      <div className={styles.copyright}>
+        <span>&copy;</span> 2025 Jarvis
       </div>
     </div>
-    <div className={styles.copyright}>
-      <span>&copy;</span> 2025 Jarvis
-    </div>
-  </div>
-);
+  );
+};
 
 export default Footer;

@@ -6,6 +6,12 @@ import Work from '../../components/Work/Work.jsx';
 import Footer from '../../components/Footer/Footer.jsx';
 
 const Projects = () => {
+  React.useEffect(() => {
+    window.dispatchEvent(new Event('futureworks-cursor-enter'));
+    return () => {
+      window.dispatchEvent(new Event('futureworks-cursor-leave'));
+    };
+  }, []);
   return (
     <div className={styles.projectsPage}>
       <Navbar isHero={false} />

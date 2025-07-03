@@ -20,17 +20,31 @@ const works = [
   }
 ];
 
-const FutureWorksSection = () => (
-  <section className={styles.futureWorksSection}>
-    <h2 className={styles.heading}>FUTURE WORKS</h2>
-    {works.map((work, idx) => (
-      <FutureWork key={idx} image={work.image} title={work.title} subtitle={work.subtitle} />
-    ))}
-    <button className={styles.moreWorksBtn}>
-      <span>More Works</span>
-      <span className={styles.arrow}>&rarr;</span>
-    </button>
-  </section>
-);
+
+const FutureWorksSection = () => {
+  // Fire custom events on mouse enter/leave
+  const handleMouseEnter = () => {
+    window.dispatchEvent(new Event('futureworks-cursor-enter'));
+  };
+  const handleMouseLeave = () => {
+    window.dispatchEvent(new Event('futureworks-cursor-leave'));
+  };
+  return (
+    <section
+      className={styles.futureWorksSection}
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
+    >
+      <h2 className={styles.heading}>FUTURE WORKS</h2>
+      {works.map((work, idx) => (
+        <FutureWork key={idx} image={work.image} title={work.title} subtitle={work.subtitle} />
+      ))}
+      <button className={styles.moreWorksBtn}>
+        <span>More Works</span>
+        <span className={styles.arrow}>&rarr;</span>
+      </button>
+    </section>
+  );
+};
 
 export default FutureWorksSection;

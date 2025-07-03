@@ -6,6 +6,13 @@ import styles from './index.module.css';
 const Contact = () => {
   const [form, setForm] = useState({ name: '', email: '', message: '' });
 
+  React.useEffect(() => {
+    window.dispatchEvent(new Event('herosection-cursor-enter'));
+    return () => {
+      window.dispatchEvent(new Event('herosection-cursor-leave'));
+    };
+  }, []);
+
   const handleChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });
   };

@@ -43,6 +43,13 @@ const Navbar = ({ isHero }) => {
     };
   }, []);
 
+  // Always use small circle cursor in navbar
+  const handleMouseEnter = () => {
+    window.dispatchEvent(new Event('futureworks-cursor-leave'));
+  };
+  const handleMouseLeave = () => {
+    window.dispatchEvent(new Event('futureworks-cursor-enter'));
+  };
   return (
     <nav
       id="main-navbar"
@@ -53,6 +60,8 @@ const Navbar = ({ isHero }) => {
         pointerEvents: visible ? 'auto' : 'none',
         transition: 'opacity 0.4s cubic-bezier(.4,0,.2,1)'
       }}
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
     >
       <Link to="/" className={styles.left}>JARVIS</Link>
       <div className={styles.center}>

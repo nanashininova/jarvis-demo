@@ -1,7 +1,7 @@
 
 import React from 'react';
 import styles from './Work.module.css';
-
+// ...existing code...
 const Work = ({ image, title, subtitle }) => {
   return (
     <div className={styles.work}>
