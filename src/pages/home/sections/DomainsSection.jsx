@@ -18,12 +18,17 @@ const domains = [
     ]
   },
   {
-    title: "Cyber Forensics & Blockchain",
+    title: "CYBER FORENSICS & BLOCKCHAIN",
     points: [
       [
-        "Digital Forensics",
-        "Cybersecurity",
-        "Blockchain Technologies"
+        "NETWORK FORENSICS",
+        "DIGITAL EVIDENCE RECOVERY",
+        "BLOCKCHAIN SECURITY & AUDITING"
+      ],
+      [
+        "MALWARE ANALYSIS",
+        "SMART CONTRACT DEVELOPMENT",
+        "BLOCKCHAIN FORENSICS"
       ]
     ]
   },
@@ -31,9 +36,14 @@ const domains = [
     title: "Game Development & Designing",
     points: [
       [
-        "Game Programming",
-        "Game Art & Design",
-        "Storytelling & Narrative"
+        "Game Art & Animation",
+        "Sound Design & Music Production",
+        "Game Storytelling"
+      ],
+      [
+        "Level Design",
+        "UI/UX Design for Games",
+        "Narrative Design"
       ]
     ]
   },
@@ -41,9 +51,14 @@ const domains = [
     title: "Informatics",
     points: [
       [
-        "Data Analysis",
-        "Data Visualization",
-        "Decision Support Systems"
+        "Bioinformatics",
+        "Business Informatics",
+        "Educational Informatics"
+      ],
+      [
+        "Health Informatics",
+        "Data Science & AnalyticsGI Integration",
+        "Environmental Informatics"
       ]
     ]
   }

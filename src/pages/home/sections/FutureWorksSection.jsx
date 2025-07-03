@@ -4,19 +4,28 @@ import FutureWork from "../../../components/FutureWork/FutureWork.jsx";
 
 const works = [
   {
-    image: "/about-section-1.png",
-    title: "AI-powered Campus Navigation",
-    subtitle: "A smart navigation system for the IITM BS campus using computer vision and NLP to help new students and visitors find their way efficiently."
+    image1: "/future-work-1.png",
+    image2: "/future-work-2.png",
+    title: "VR BASED PHOBIA THERAPY",
+    subtitle: "VR + PSYCHOLOGY"
   },
   {
-    image: "/about-section-2.png",
-    title: "Collaborative Robotics Lab",
-    subtitle: "A hands-on robotics lab for students to build, test, and collaborate on real-world robotics projects, fostering innovation and teamwork."
+    image1: "/future-work-3.png",
+    image2: "/future-work-4.png",
+    title: "CYBER INTRUSION PATTERN IDENTIFIER",
+    subtitle: "PROJECT"
   },
   {
-    image: "/about-section-3.png",
-    title: "Interdisciplinary Hackathons",
-    subtitle: "Annual hackathons bringing together students from AI, programming, electronics, and design to solve impactful challenges."
+    image1: "/future-work-5.png",
+    image2: "/future-work-6.png",
+    title: "DEEPFAKE DETECTION SUITE",
+    subtitle: "PROJECT"
+  },
+  {
+    image1: "/future-work-7.png",
+    image2: "/future-work-8.png",
+    title: "AI- BASED NPC EMOTION ENGINE",
+    subtitle: "GAME DEV + AFFECTIVE COMPUTING"
   }
 ];
 
@@ -37,9 +46,18 @@ const FutureWorksSection = () => {
     >
       <h2 className={styles.heading}>FUTURE WORKS</h2>
       {works.map((work, idx) => (
-        <FutureWork key={idx} image={work.image} title={work.title} subtitle={work.subtitle} />
+        <FutureWork
+          key={idx}
+          image1={work.image1}
+          image2={work.image2}
+          title={work.title}
+          subtitle={work.subtitle}
+        />
       ))}
-      <button className={styles.moreWorksBtn}>
+      <button
+        className={styles.moreWorksBtn}
+        onClick={() => window.location.href = '/projects'}
+      >
         <span>More Works</span>
         <span className={styles.arrow}>&rarr;</span>
       </button>

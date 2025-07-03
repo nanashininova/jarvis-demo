@@ -54,8 +54,10 @@
   font-family: 'Fira Mono', 'Menlo', 'Monaco', 'Consolas', monospace;
   opacity: 0.85;
   cursor: pointer;
-  transition: color 0.2s;
+  transition: color 0.2s, transform 0.2s cubic-bezier(.4,0,.2,1);
+  will-change: transform;
 }
 .infoRow:hover {
   color: #b3b3b3;
+  transform: translateY(-6px);
 }

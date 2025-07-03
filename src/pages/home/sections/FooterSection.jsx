@@ -24,9 +24,9 @@ const FooterSection = () => (
       <div className={styles.marqueeWrapper} style={{ position: 'relative' }}>
         <div className={styles.footerMarqueeBlurLeft} />
         <Marquee gradient={false} speed={40} pauseOnHover={false} direction="right">
-          {["about-section-1.png", "about-section-2.png", "about-section-3.png", "about-section-1.png", "about-section-2.png", "about-section-3.png"].map((img, idx) => (
-            <div className={styles.marqueeCard} key={idx}>
-              <img src={`/${img}`} alt="footer slide" className={styles.marqueeImg} />
+          {[1,2,3,4,5,6].map((num) => (
+            <div className={styles.marqueeCard} key={num}>
+              <img src={`/marquee-${num}.png`} alt={`footer slide ${num}`} className={styles.marqueeImg} />
             </div>
           ))}
         </Marquee>

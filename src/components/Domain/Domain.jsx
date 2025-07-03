@@ -28,13 +28,13 @@ const Domain = ({ title, points = [] }) => {
   }, []);
   return (
     <div className={styles.domain} ref={ref}>
-      <h3 className={styles.title}>{title}</h3>
+      <h3 className={styles.title}>{title.toUpperCase()}</h3>
       <hr />
       <div className={styles.pointsGrid}>
         {points.map((col, colIdx) => (
           <ul className={styles.pointsCol} key={colIdx}>
             {col.map((point, idx) => (
-              <li className={styles.point} key={idx}>{point}</li>
+              <li className={styles.point} key={idx}>{point.toUpperCase()}</li>
             ))}
           </ul>
         ))}

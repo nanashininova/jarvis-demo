@@ -17,34 +17,28 @@ const Projects = () => {
       <Navbar isHero={false} />
       <HeroSection />
       <Work
-        image="/about-section-1.png"
-        title="AI-Powered Virtual Assistant"
-        subtitle="A smart assistant that leverages natural language processing and machine learning to help users automate tasks, answer questions, and manage schedules with ease."
+        image1="/future-work-1.png"
+        image2="/future-work-2.png"
+        title="VR BASED PHOBIA THERAPY"
+        subtitle="VR + PSYCHOLOGY"
       />
       <Work
-        image="/about-section-2.png"
-        title="Smart Home Controller"
-        subtitle="Control and automate your smart home devices with intuitive voice commands and personalized routines."
+        image1="/future-work-3.png"
+        image2="/future-work-4.png"
+        title="CYBER INTRUSION PATTERN IDENTIFIER"
+        subtitle="PROJECT"
       />
       <Work
-        image="/about-section-3.png"
-        title="Collaborative Workspace Bot"
-        subtitle="A virtual assistant that helps teams manage projects, schedule meetings, and streamline communication."
+        image1="/future-work-5.png"
+        image2="/future-work-6.png"
+        title="DEEPFAKE DETECTION SUITE"
+        subtitle="PROJECT"
       />
       <Work
-        image="/about-section-4.png"
-        title="Health & Wellness Tracker"
-        subtitle="Track your daily habits, set wellness goals, and receive AI-powered health insights."
-      />
-      <Work
-        image="/about-section-5.png"
-        title="Learning Companion"
-        subtitle="An AI tutor that adapts to your learning style, provides resources, and tracks your progress."
-      />
-      <Work
-        image="/about-section-6.png"
-        title="Personal Finance Advisor"
-        subtitle="Manage your expenses, set budgets, and get smart financial advice tailored to your needs."
+        image1="/future-work-7.png"
+        image2="/future-work-8.png"
+        title="AI- BASED NPC EMOTION ENGINE"
+        subtitle="GAME DEV + AFFECTIVE COMPUTING"
       />
       <Footer />
     </div>

@@ -14,9 +14,27 @@ const Footer = () => {
       <div className={styles.infoColumns}>
         <div className={styles.infoCol}>
           <div className={styles.infoHeading}>About</div>
-          <div className={styles.infoRow}>Works</div>
-          <div className={styles.infoRow}>About</div>
-          <div className={styles.infoRow}>Contact</div>
+          <div
+            className={styles.infoRow}
+            onClick={() => window.location.href = '/projects'}
+            tabIndex={0}
+            role="button"
+            onKeyPress={e => { if (e.key === 'Enter') window.location.href = '/projects'; }}
+          >Works</div>
+          <div
+            className={styles.infoRow}
+            onClick={() => window.location.href = '/'}
+            tabIndex={0}
+            role="button"
+            onKeyPress={e => { if (e.key === 'Enter') window.location.href = '/'; }}
+          >About</div>
+          <div
+            className={styles.infoRow}
+            onClick={() => window.location.href = '/contact'}
+            tabIndex={0}
+            role="button"
+            onKeyPress={e => { if (e.key === 'Enter') window.location.href = '/contact'; }}
+          >Contact</div>
         </div>
         <div className={styles.infoCol}>
           <div className={styles.infoHeading}>Socials</div>
