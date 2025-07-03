@@ -31,6 +31,7 @@ const HeroSection = () => {
         </div>
       </div>
       <div className={styles.iconMarqueeWrapper}>
+        <div className={styles.iconMarqueeBlurLeft} />
         <Marquee gradient={false} speed={30} pauseOnHover={false} direction="right">
           <FaWifi className={styles.heroIcon} />
           <FaEye className={styles.heroIcon} />
@@ -40,7 +41,9 @@ const HeroSection = () => {
           <FaEye className={styles.heroIcon} />
           <FaShieldAlt className={styles.heroIcon} />
           <FaCloud className={styles.heroIcon} />
+          <FaEye className={styles.heroIcon} />
         </Marquee>
+        <div className={styles.iconMarqueeBlurRight} />
       </div>
     </section>
   );

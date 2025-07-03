@@ -59,9 +59,12 @@
   background: #181818;
   border-radius: 20px;
   box-shadow: 0 2px 12px rgba(0,0,0,0.14);
-  padding: 16px 20px;
+  padding: 0;
   min-width: 140px;
-  min-height: 110px;
+  min-height: 100px;
+  width: 140px;
+  height: 100px;
+  overflow: hidden;
   transform: skewY(-10deg);
 }
 
@@ -75,10 +78,10 @@
 }
 
 .marqueeImg {
-  width: 70px;
-  height: 50px;
-  object-fit: contain;
-  border-radius: 8px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 14px;
   background: #fff;
 }
 /* Join Us Button Styles */

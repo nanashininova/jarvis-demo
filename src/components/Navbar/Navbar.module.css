@@ -12,9 +12,11 @@
   justify-content: space-between;
   padding: 0 48px;
   height: 64px;
-  background: transparent;
+  background: rgba(16,16,16,0.18);
   box-sizing: border-box;
   transition: background 0.3s, opacity 0.4s cubic-bezier(.4,0,.2,1);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
 }
 
 .left {
