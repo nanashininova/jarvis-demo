@@ -38,7 +38,7 @@
 .custom-cursor.eye {
   width: 44px;
   height: 44px;
-  background: rgba(255,255,255,0.95);
+  background: rgba(255, 255, 255,0.20);
 }
 
 body, * {

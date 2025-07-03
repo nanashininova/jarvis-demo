@@ -18,7 +18,11 @@ const FooterSection = () => (
         <span className={styles.arrow}>&rarr;</span>
       </button>
 
-      <div className={styles.marqueeWrapper}>
+      {/* Two line spaces before marquee */}
+      <div style={{ height: '2.5em' }} />
+
+      <div className={styles.marqueeWrapper} style={{ position: 'relative' }}>
+        <div className={styles.footerMarqueeBlurLeft} />
         <Marquee gradient={false} speed={40} pauseOnHover={false} direction="right">
           {["about-section-1.png", "about-section-2.png", "about-section-3.png", "about-section-1.png", "about-section-2.png", "about-section-3.png"].map((img, idx) => (
             <div className={styles.marqueeCard} key={idx}>
@@ -26,7 +30,9 @@ const FooterSection = () => (
             </div>
           ))}
         </Marquee>
+        <div className={styles.footerMarqueeBlurRight} />
       </div>
+      <div className={styles.marqueeFooterSpacer} />
 
       {/* Info Columns */}
       <Footer />

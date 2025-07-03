@@ -32,22 +32,22 @@
   margin-left: 0;
   margin-right: auto;
   box-sizing: border-box;
-  padding-left: 5vw;
+  padding-left: 2vw;
 }
 
 .title {
   color: #fff;
-  font-size: 2.2rem;
+  font-size: 1.4rem;
   font-family: 'Fira Mono', 'Menlo', 'Monaco', 'Consolas', monospace;
   font-weight: 700;
-  margin-bottom: 12px;
+  margin-bottom: 8px;
   letter-spacing: 0.03em;
   text-align: left;
 }
 
 .subtitle {
   color: #e0e6f7;
-  font-size: 1.1rem;
+  font-size: 0.95rem;
   font-family: 'Fira Mono', 'Menlo', 'Monaco', 'Consolas', monospace;
   margin: 0;
   max-width: 700px;
