@@ -8,8 +8,8 @@ describe('FutureWork component', () => {
     render(
       <MemoryRouter>
         <FutureWork
-          image1="/future-work-1.png"
-          image2="/future-work-2.png"
+          image1="/jarvis-demo/future-work-1.png"
+          image2="/jarvis-demo/future-work-2.png"
           title="Future Work Title"
           subtitle="Future Subtitle"
         />

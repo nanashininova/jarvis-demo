@@ -4,26 +4,26 @@ import FutureWork from "../../../components/FutureWork/FutureWork.jsx";
 
 const works = [
   {
-    image1: "/future-work-1.png",
-    image2: "/future-work-2.png",
+    image1: "/jarvis-demo/future-work-1.png",
+    image2: "/jarvis-demo/future-work-2.png",
     title: "VR BASED PHOBIA THERAPY",
     subtitle: "VR + PSYCHOLOGY"
   },
   {
-    image1: "/future-work-3.png",
-    image2: "/future-work-4.png",
+    image1: "/jarvis-demo/future-work-3.png",
+    image2: "/jarvis-demo/future-work-4.png",
     title: "CYBER INTRUSION PATTERN IDENTIFIER",
     subtitle: "PROJECT"
   },
   {
-    image1: "/future-work-5.png",
-    image2: "/future-work-6.png",
+    image1: "/jarvis-demo/future-work-5.png",
+    image2: "/jarvis-demo/future-work-6.png",
     title: "DEEPFAKE DETECTION SUITE",
     subtitle: "PROJECT"
   },
   {
-    image1: "/future-work-7.png",
-    image2: "/future-work-8.png",
+    image1: "/jarvis-demo/future-work-7.png",
+    image2: "/jarvis-demo/future-work-8.png",
     title: "AI- BASED NPC EMOTION ENGINE",
     subtitle: "GAME DEV + AFFECTIVE COMPUTING"
   }

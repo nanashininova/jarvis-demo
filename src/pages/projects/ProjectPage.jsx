@@ -9,7 +9,7 @@ const PROJECTS = {
   'vr-based-phobia-therapy': {
     title: 'VR BASED PHOBIA THERAPY',
     subtitle: 'VR + PSYCHOLOGY',
-    images: ['/future-work-1.png', '/future-work-2.png'],
+    images: ['/jarvis-demo/future-work-1.png', '/jarvis-demo/future-work-2.png'],
     industry: 'Speakeasy Bar',
     year: '2025',
     client: 'experimental concept',
@@ -18,7 +18,7 @@ const PROJECTS = {
   'cyber-intrusion-pattern-identifier': {
     title: 'CYBER INTRUSION PATTERN IDENTIFIER',
     subtitle: 'PROJECT',
-    images: ['/future-work-3.png', '/future-work-4.png'],
+    images: ['/jarvis-demo/future-work-3.png', '/jarvis-demo/future-work-4.png'],
     industry: 'Cybersecurity',
     year: '2024',
     client: 'Tech Defense Inc.',
@@ -27,7 +27,7 @@ const PROJECTS = {
   'deepfake-detection-suite': {
     title: 'DEEPFAKE DETECTION SUITE',
     subtitle: 'PROJECT',
-    images: ['/future-work-5.png', '/future-work-6.png'],
+    images: ['/jarvis-demo/future-work-5.png', '/jarvis-demo/future-work-6.png'],
     industry: 'Media Forensics',
     year: '2025',
     client: 'OpenAI Research',
@@ -36,7 +36,7 @@ const PROJECTS = {
   'ai-based-npc-emotion-engine': {
     title: 'AI- BASED NPC EMOTION ENGINE',
     subtitle: 'GAME DEV + AFFECTIVE COMPUTING',
-    images: ['/future-work-7.png', '/future-work-8.png'],
+    images: ['/jarvis-demo/future-work-7.png', '/jarvis-demo/future-work-8.png'],
     industry: 'Gaming',
     year: '2023',
     client: 'NextGen Games',
@@ -45,7 +45,7 @@ const PROJECTS = {
   'ar-telemedicine-diagnostic-tool': {
     title: 'AR Telemedicine Diagnostic Tool',
     subtitle: 'AR + Healthcare',
-    images: ['/future-work-9.png', '/future-work-10.png'],
+    images: ['/jarvis-demo/future-work-9.png', '/jarvis-demo/future-work-10.png'],
     industry: 'Healthcare',
     year: '2025',
     client: 'MedTech Labs',
@@ -54,7 +54,7 @@ const PROJECTS = {
   'cryptobio': {
     title: 'CryptoBio',
     subtitle: 'Blockchain + Bioinformatics',
-    images: ['/future-work-11.png', '/future-work-12.png'],
+    images: ['/jarvis-demo/future-work-11.png', '/jarvis-demo/future-work-12.png'],
     industry: 'Bioinformatics',
     year: '2025',
     client: 'GenomeChain',
