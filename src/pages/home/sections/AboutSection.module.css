@@ -171,12 +171,12 @@
 .text {
   color: #e0e6f7;
   font-family: 'Fira Mono', 'Menlo', 'Monaco', 'Consolas', monospace;
-  font-size: 1rem;
+  font-size: 0.95rem;
   width: 100%;
   max-width: none;
-  text-align: right;
+  text-align: left;
   line-height: 1.7;
-  margin: 0 0 0 auto;
+  margin: 0;
   word-break: break-word;
 }
 
