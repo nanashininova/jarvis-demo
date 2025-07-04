@@ -4,7 +4,7 @@ import { FaArrowRight } from "react-icons/fa";
 import { FaBars } from "react-icons/fa";
 import { Link, useLocation } from "react-router-dom";
 
-const Navbar = ({ isHero }) => {
+const Navbar = ({ isHero, isWhiteIntro }) => {
   const [visible, setVisible] = useState(true);
   const [menuOpen, setMenuOpen] = useState(false);
   useEffect(() => {
@@ -57,7 +57,7 @@ const Navbar = ({ isHero }) => {
       id="main-navbar"
       className={styles.navbar}
       style={{
-        '--navbar-text': isHero ? '#23243b' : '#fff',
+        '--navbar-text': (isHero || isWhiteIntro) ? '#23243b' : '#fff',
         opacity: visible ? 1 : 0,
         pointerEvents: visible ? 'auto' : 'none',
         transition: 'opacity 0.4s cubic-bezier(.4,0,.2,1)'
