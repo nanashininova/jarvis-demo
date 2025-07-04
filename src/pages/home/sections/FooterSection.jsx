@@ -13,7 +13,10 @@ const FooterSection = () => (
         <div>TURNING IMAGINATION</div>
         <div>INTO REALITY</div>
       </div>
-      <button className={styles.joinBtn}>
+      <button
+        className={styles.joinBtn}
+        onClick={() => window.open('https://docs.google.com/forms/d/1EWxVoFPi_kHb06HrmCuyrPE2xo_0KPEMyS_D5nOZkRU', '_blank', 'noopener noreferrer')}
+      >
         <span>Join us</span>
         <span className={styles.arrow}>&rarr;</span>
       </button>

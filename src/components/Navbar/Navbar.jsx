@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from "react";
 import styles from "./Navbar.module.css";
 import { FaArrowRight } from "react-icons/fa";
+import { FaBars } from "react-icons/fa";
 import { Link, useLocation } from "react-router-dom";
 
 const Navbar = ({ isHero }) => {
   const [visible, setVisible] = useState(true);
+  const [menuOpen, setMenuOpen] = useState(false);
   useEffect(() => {
     let hideTimeout;
     let isHovering = false;
@@ -64,15 +66,48 @@ const Navbar = ({ isHero }) => {
       onMouseLeave={handleMouseLeave}
     >
       <Link to="/" className={styles.left}>JARVIS</Link>
-      <div className={styles.center}>
-        <Link to="/projects" className={styles.link}>Works</Link>
-        <Link to="/" className={styles.link}>About</Link>
-        <Link to="/contact" className={styles.link}>Contact</Link>
+      <div className={styles.desktopMenu}>
+        <div className={styles.center}>
+          <Link to="/projects" className={styles.link}>Works</Link>
+          <Link to="/" className={styles.link}>About</Link>
+          <Link to="/contact" className={styles.link}>Contact</Link>
+        </div>
+        <a
+          href="https://docs.google.com/forms/d/1EWxVoFPi_kHb06HrmCuyrPE2xo_0KPEMyS_D5nOZkRU"
+          className={styles.joinBtn}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <span>Join Us</span>
+          <span className={styles.arrow}><FaArrowRight /></span>
+        </a>
       </div>
-      <a href="#join" className={styles.joinBtn}>
-        <span>Join Us</span>
-        <span className={styles.arrow}><FaArrowRight /></span>
-      </a>
+      <button
+        className={styles.burger + (menuOpen ? ' ' + styles.burgerOpen : '')}
+        aria-label={menuOpen ? 'Close menu' : 'Open menu'}
+        onClick={() => setMenuOpen(!menuOpen)}
+      >
+        <span className={styles.burgerLines}></span>
+        <span className={styles.burgerLines}></span>
+      </button>
+      {menuOpen && (
+        <div className={styles.mobileMenu} onClick={() => setMenuOpen(false)}>
+          <div className={styles.mobileMenuContent} onClick={e => e.stopPropagation()}>
+            <Link to="/projects" className={styles.mobileLink}>Works</Link>
+            <Link to="/" className={styles.mobileLink}>About</Link>
+            <Link to="/contact" className={styles.mobileLink}>Contact</Link>
+            <a
+              href="https://docs.google.com/forms/d/1EWxVoFPi_kHb06HrmCuyrPE2xo_0KPEMyS_D5nOZkRU"
+              className={styles.mobileJoinBtn}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span>Join Us</span>
+              <span className={styles.arrow}><FaArrowRight /></span>
+            </a>
+          </div>
+        </div>
+      )}
     </nav>
   );
 };

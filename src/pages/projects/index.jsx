@@ -40,6 +40,18 @@ const Projects = () => {
         title="AI- BASED NPC EMOTION ENGINE"
         subtitle="GAME DEV + AFFECTIVE COMPUTING"
       />
+      <Work
+        image1="/future-work-9.png"
+        image2="/future-work-10.png"
+        title="AR Telemedicine Diagnostic Tool"
+        subtitle="AR + Healthcare"
+      />
+      <Work
+        image1="/future-work-11.png"
+        image2="/future-work-12.png"
+        title="CryptoBio"
+        subtitle="Blockchain + Bioinformatics"
+      />
       <Footer />
     </div>
   );

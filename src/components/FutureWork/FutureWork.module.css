@@ -42,11 +42,12 @@
   font-weight: 700;
   margin-bottom: 8px;
   letter-spacing: 0.03em;
+
   text-align: left;
 }
 
 .subtitle {
-  color: #e0e6f7;
+  color: #888a92;
   font-size: 0.95rem;
   font-family: 'Fira Mono', 'Menlo', 'Monaco', 'Consolas', monospace;
   margin: 0;
