@@ -43,13 +43,52 @@ const WhiteIntroOverlay = ({ progress = 0 }) => {
     background: 'transparent',
   };
 
+  // Image cycling logic
+  const leftImages = [
+    'left-overlay-1.png',
+    'left-overlay-2.png',
+    'left-overlay-3.png',
+  ];
+  const rightImages = [
+    'right-overlay-1.png',
+    'right-overlay-2.png',
+    'right-overlay-3.png',
+  ];
+
+  const [leftIndex, setLeftIndex] = useState(0);
+  const [rightIndex, setRightIndex] = useState(0);
+
+  useEffect(() => {
+    const leftInterval = setInterval(() => {
+      setLeftIndex((prev) => (prev + 1) % leftImages.length);
+    }, 2000);
+    return () => clearInterval(leftInterval);
+    // eslint-disable-next-line
+  }, []);
+
+  useEffect(() => {
+    const rightInterval = setInterval(() => {
+      setRightIndex((prev) => (prev + 1) % rightImages.length);
+    }, 2000);
+    return () => clearInterval(rightInterval);
+    // eslint-disable-next-line
+  }, []);
+
   return (
     <div style={overlayStyle}>
       <div style={leftStyle}>
-        <img src="about-section-1.png" alt="Overlay Left" style={{ position: 'absolute', left: 0, top: 0, width: '100%', height: '100%', objectFit: 'cover' }} />
+        <img
+          src={leftImages[leftIndex]}
+          alt={`Overlay Left ${leftIndex + 1}`}
+          style={{ position: 'absolute', left: 0, top: 0, width: '100%', height: '100%', objectFit: 'cover', transition: 'opacity 0.5s' }}
+        />
       </div>
       <div style={rightStyle}>
-        <img src="about-section-2.png" alt="Overlay Right" style={{ position: 'absolute', left: 0, top: 0, width: '100%', height: '100%', objectFit: 'cover' }} />
+        <img
+          src={rightImages[rightIndex]}
+          alt={`Overlay Right ${rightIndex + 1}`}
+          style={{ position: 'absolute', left: 0, top: 0, width: '100%', height: '100%', objectFit: 'cover', transition: 'opacity 0.5s' }}
+        />
       </div>
     </div>
   );

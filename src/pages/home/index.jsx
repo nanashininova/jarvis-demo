@@ -9,15 +9,21 @@ import Navbar from '../../components/Navbar/Navbar.jsx';
 
 const Home = () => {
   const [isHeroInView, setIsHeroInView] = React.useState(true);
+  const [isWhiteIntroInView, setIsWhiteIntroInView] = React.useState(true);
   const heroRef = React.useRef(null);
   const introRef = React.useRef(null);
 
   React.useEffect(() => {
     const handleScroll = () => {
-      if (!heroRef.current) return;
-      const rect = heroRef.current.getBoundingClientRect();
-      // If top of hero is at or above nav, and bottom is below nav, it's in view
-      setIsHeroInView(rect.top <= 64 && rect.bottom > 64);
+      if (heroRef.current) {
+        const rect = heroRef.current.getBoundingClientRect();
+        setIsHeroInView(rect.top <= 64 && rect.bottom > 64);
+      }
+      if (introRef.current) {
+        const rect = introRef.current.getBoundingClientRect();
+        // If any part of WhiteIntroSection is visible in viewport
+        setIsWhiteIntroInView(rect.bottom > 0 && rect.top < window.innerHeight);
+      }
     };
     window.addEventListener('scroll', handleScroll);
     handleScroll();
@@ -26,7 +32,7 @@ const Home = () => {
 
   return (
     <>
-      <Navbar isHero={isHeroInView} />
+      <Navbar isHero={isHeroInView} isWhiteIntro={isWhiteIntroInView} />
       <WhiteIntroSection ref={introRef} />
       <div ref={heroRef}>
         <HeroSection />
