@@ -1,6 +1,6 @@
 # JARVIS Demo
 
-JARVIS is a modern web application for the Tech Society at IIT Madras, showcasing AI, research, virtual networks, IoT, and electronics. This demo features a visually engaging homepage, interactive hero section, and smooth UI/UX built with React and Vite.
+JARVIS Demo is a modern web application for the Tech Society at IIT Madras, showcasing AI, research, virtual networks, IoT, and electronics. This demo features a visually engaging homepage, interactive hero section, and smooth UI/UX built with React and Vite.
 
 ## 🚀 Features
 
