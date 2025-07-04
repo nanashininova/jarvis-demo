@@ -1,0 +1,134 @@
+.moreProjectsSection {
+  margin-top: 3.5rem;
+  text-align: center;
+}
+.moreProjectsHeading {
+  font-size: 2rem;
+  color: #fff;
+  margin-bottom: 2rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+.moreProjectsList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2.5rem;
+}
+.moreProjectCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(30,30,30,0.85);
+  border-radius: 1rem;
+  padding: 1.2rem 1.5rem;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.13);
+  max-width: 220px;
+}
+.moreProjectImg {
+  width: 160px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 0.7rem;
+  margin-bottom: 1rem;
+}
+.moreProjectTitle {
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 0.2rem;
+}
+.projectPage {
+  min-height: 100vh;
+  background: #101010;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  max-width: 900px;
+  margin: 3rem auto 2rem auto;
+  padding: 2rem;
+  background: rgba(30,30,30,0.95);
+  border-radius: 1.5rem;
+  box-shadow: 0 4px 32px rgba(0,0,0,0.25);
+}
+
+.subtitle {
+  color: #aaa;
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+}
+
+.title {
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.images {
+  display: flex;
+  gap: 2rem;
+  margin: 2rem 0;
+  justify-content: center;
+}
+
+.image {
+  max-width: 320px;
+  border-radius: 1rem;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.18);
+}
+
+.description {
+  font-size: 1.2rem;
+  margin-top: 2.5rem;
+  color: #ccc;
+  text-align: left;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.projectMetaWrapper {
+  margin-top: 2.5rem;
+  margin-bottom: 0.5rem;
+  display: flex;
+  justify-content: center;
+}
+.projectMetaRow {
+  display: flex;
+  gap: 3.5rem;
+}
+.projectMetaCol {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.projectMetaHeader {
+  font-size: 1.05rem;
+  color: #aaa;
+  font-weight: 600;
+  margin-bottom: 0.2rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+.projectMetaValue {
+  font-size: 1.15rem;
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+}
+
+.notFound {
+  text-align: center;
+  margin: 5rem 0;
+  font-size: 2rem;
+  color: #ff6b6b;
+}

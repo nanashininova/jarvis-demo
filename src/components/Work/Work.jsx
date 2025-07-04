@@ -1,11 +1,13 @@
 
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import styles from './Work.module.css';
 // ...existing code...
 
 import { useRef, useEffect, useState } from 'react';
 
 const Work = ({ image1, image2, title, subtitle }) => {
+  const navigate = useNavigate();
   const ref = useRef();
   const [showSecond, setShowSecond] = useState(false);
 
@@ -28,8 +30,15 @@ const Work = ({ image1, image2, title, subtitle }) => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  // Helper to create hyphen-separated, lower-case slug from title
+  const slug = title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+
+  const handleClick = () => {
+    navigate(`/projects/${slug}`);
+  };
+
   return (
-    <div className={styles.work} ref={ref}>
+    <div className={styles.work} ref={ref} onClick={handleClick} style={{ cursor: 'pointer' }}>
       <img
         src={showSecond ? image2 : image1}
         alt={title}

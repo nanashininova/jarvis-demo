@@ -1,9 +1,11 @@
 import React, { useRef, useEffect, useState } from "react";
+import { useNavigate } from 'react-router-dom';
 import styles from "./FutureWork.module.css";
 
 // FutureWork component: full-width image, title, and subtitle
 // Accepts: image1, image2, title, subtitle
 const FutureWork = ({ image1, image2, title, subtitle }) => {
+  const navigate = useNavigate();
   const ref = useRef();
   const [showSecond, setShowSecond] = useState(false);
 
@@ -28,8 +30,15 @@ const FutureWork = ({ image1, image2, title, subtitle }) => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  // Helper to create hyphen-separated, lower-case slug from title
+  const slug = title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+
+  const handleClick = () => {
+    navigate(`/projects/${slug}`);
+  };
+
   return (
-    <div className={styles.futureWork} ref={ref}>
+    <div className={styles.futureWork} ref={ref} onClick={handleClick} style={{ cursor: 'pointer' }}>
       <img
         src={showSecond ? image2 : image1}
         alt={title}

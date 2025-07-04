@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './pages/home';
 import Projects from './pages/projects';
 import Contact from './pages/contact';
+import ProjectPage from './pages/projects/ProjectPage.jsx';
 import CustomCursor from './components/CustomCursor.jsx';
 import './components/CustomCursor.css';
 
@@ -33,6 +34,7 @@ function App() {
         <Routes>
           <Route path="/" element={<><CustomCursor type={cursorType} /><Home /></>} />
           <Route path="/projects" element={<><CustomCursor type={cursorType} /><Projects /></>} />
+          <Route path="/projects/:projectName" element={<><CustomCursor type={cursorType} /><ProjectPage /></>} />
           <Route path="/contact" element={<><CustomCursor type="circle" /><Contact /></>} />
         </Routes>
       </BrowserRouter>
