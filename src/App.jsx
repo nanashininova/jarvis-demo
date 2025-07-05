@@ -1,5 +1,5 @@
 import React from 'react';
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, useLocation } from 'react-router-dom';
 import Home from './pages/home';
 import Projects from './pages/projects';
 import Contact from './pages/contact';
@@ -10,6 +10,7 @@ import './components/CustomCursor.css';
 
 function App() {
   const [cursorType, setCursorType] = React.useState('circle');
+  const location = useLocation();
 
   // Listen for entering/leaving FutureWorksSection
   React.useEffect(() => {
@@ -28,6 +29,10 @@ function App() {
       window.removeEventListener('herosection-cursor-leave', handleHeroLeave);
     };
   }, []);
+
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location.pathname]);
 
   return (
     <>
