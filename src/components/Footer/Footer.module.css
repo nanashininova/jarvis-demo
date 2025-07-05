@@ -16,6 +16,38 @@
   margin-right: 4vw;
   white-space: nowrap;
   align-self: flex-end;
+  display: block;
+}
+
+.copyrightMobile {
+  display: none;
+}
+@media (max-width: 700px) {
+  .footerRow {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-bottom: 16px;
+  }
+  .infoColumns {
+    flex-direction: column;
+    gap: 24px;
+    margin: 24px 0 0 0;
+    padding-left: 4vw;
+  }
+  .copyright {
+    display: none;
+  }
+  .copyrightMobile {
+    display: block;
+    color: #b3b3b3;
+    font-size: 0.98rem;
+    font-family: 'Fira Mono', 'Menlo', 'Monaco', 'Consolas', monospace;
+    margin-top: 24px;
+    margin-left: 4vw;
+    margin-bottom: 8px;
+    white-space: nowrap;
+    align-self: flex-start;
+  }
 }
 /* Info Columns for Footer */
 .infoColumns {

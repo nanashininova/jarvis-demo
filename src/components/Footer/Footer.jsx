@@ -43,6 +43,9 @@ const Footer = () => {
           <div className={styles.infoRow}>Twitter</div>
         </div>
       </div>
+      <div className={styles.copyrightMobile}>
+        <span>&copy;</span> 2025 Jarvis
+      </div>
       <div className={styles.copyright}>
         <span>&copy;</span> 2025 Jarvis
       </div>
