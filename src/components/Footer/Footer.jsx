@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 import styles from "./Footer.module.css";
 
 const Footer = () => {
@@ -14,27 +15,24 @@ const Footer = () => {
       <div className={styles.infoColumns}>
         <div className={styles.infoCol}>
           <div className={styles.infoHeading}>About</div>
-          <div
+          <Link
+            to="/projects"
             className={styles.infoRow}
-            onClick={() => window.location.href = '/projects'}
             tabIndex={0}
             role="button"
-            onKeyPress={e => { if (e.key === 'Enter') window.location.href = '/projects'; }}
-          >Works</div>
-          <div
+          >Works</Link>
+          <Link
+            to="/"
             className={styles.infoRow}
-            onClick={() => window.location.href = '/'}
             tabIndex={0}
             role="button"
-            onKeyPress={e => { if (e.key === 'Enter') window.location.href = '/'; }}
-          >About</div>
-          <div
+          >About</Link>
+          <Link
+            to="/contact"
             className={styles.infoRow}
-            onClick={() => window.location.href = '/contact'}
             tabIndex={0}
             role="button"
-            onKeyPress={e => { if (e.key === 'Enter') window.location.href = '/contact'; }}
-          >Contact</div>
+          >Contact</Link>
         </div>
         <div className={styles.infoCol}>
           <div className={styles.infoHeading}>Socials</div>
