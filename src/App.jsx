@@ -1,14 +1,14 @@
 import React from 'react';
-import { Routes, Route, useLocation } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import Home from './pages/home';
 import Projects from './pages/projects';
 import Contact from './pages/contact';
 import ProjectPage from './pages/projects/ProjectPage.jsx';
 import CustomCursor from './components/CustomCursor.jsx';
+import NotFound from './pages/NotFound.jsx';
 import './components/CustomCursor.css';
 
 function App() {
-  const location = useLocation();
   const [cursorType, setCursorType] = React.useState('circle');
 
   // Listen for entering/leaving FutureWorksSection
@@ -29,10 +29,6 @@ function App() {
     };
   }, []);
 
-  React.useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [location.pathname]);
-
   return (
     <>
       <Routes>
@@ -40,6 +36,7 @@ function App() {
         <Route path="/projects" element={<><CustomCursor type={cursorType} /><Projects /></>} />
         <Route path="/projects/:projectName" element={<><CustomCursor type={cursorType} /><ProjectPage /></>} />
         <Route path="/contact" element={<><CustomCursor type="circle" /><Contact /></>} />
+        <Route path="*" element={<><CustomCursor type={cursorType} /><NotFound /></>} />
       </Routes>
     </>
   );

@@ -1,0 +1,50 @@
+.notFoundPage {
+  min-height: 100vh;
+  background: #0a1833;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.centerContent {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+}
+
+.code {
+  font-size: 7rem;
+  font-weight: 900;
+  letter-spacing: 0.1em;
+  color: #fff;
+  margin-bottom: 0.5em;
+}
+
+.message {
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  margin-bottom: 1.5em;
+  color: #fff;
+}
+
+.homeLink {
+  font-size: 1.2rem;
+  color: #fff;
+  background: #1a2a4a;
+  padding: 0.7em 2.2em;
+  border-radius: 32px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.2s, color 0.2s;
+  border: 2px solid #fff;
+}
+.homeLink:hover {
+  background: #fff;
+  color: #0a1833;
+  border: 2px solid #fff;
+}
