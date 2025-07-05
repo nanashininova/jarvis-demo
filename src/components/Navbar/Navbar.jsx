@@ -93,14 +93,23 @@ const Navbar = ({ isHero, isWhiteIntro }) => {
       {menuOpen && (
         <div className={styles.mobileMenu} onClick={() => setMenuOpen(false)}>
           <div className={styles.mobileMenuContent} onClick={e => e.stopPropagation()}>
-            <Link to="/projects" className={styles.mobileLink}>Works</Link>
-            <Link to="/" className={styles.mobileLink}>About</Link>
-            <Link to="/contact" className={styles.mobileLink}>Contact</Link>
+            <button
+              className={styles.closeMenuBtn}
+              aria-label="Close menu"
+              onClick={() => setMenuOpen(false)}
+              style={{position: 'absolute', top: 16, right: 16, background: 'none', border: 'none', fontSize: 28, color: '#23243b', cursor: 'pointer', zIndex: 2}}
+            >
+              &#10005;
+            </button>
+            <Link to="/projects" className={styles.mobileLink} onClick={() => setMenuOpen(false)}>Works</Link>
+            <Link to="/" className={styles.mobileLink} onClick={() => setMenuOpen(false)}>About</Link>
+            <Link to="/contact" className={styles.mobileLink} onClick={() => setMenuOpen(false)}>Contact</Link>
             <a
               href="https://docs.google.com/forms/d/1EWxVoFPi_kHb06HrmCuyrPE2xo_0KPEMyS_D5nOZkRU"
               className={styles.mobileJoinBtn}
               target="_blank"
               rel="noopener noreferrer"
+              onClick={() => setMenuOpen(false)}
             >
               <span>Join Us</span>
               <span className={styles.arrow}><FaArrowRight /></span>
