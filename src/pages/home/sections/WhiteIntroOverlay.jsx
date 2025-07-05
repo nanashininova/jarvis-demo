@@ -44,15 +44,17 @@ const WhiteIntroOverlay = ({ progress = 0 }) => {
   };
 
   // Image cycling logic
+  // Use public URL for images for compatibility
+  const publicUrl = import.meta.env.BASE_URL || '/';
   const leftImages = [
-    'left-overlay-1.png',
-    'left-overlay-2.png',
-    'left-overlay-3.png',
+    `${publicUrl}left-overlay-1.png`,
+    `${publicUrl}left-overlay-2.png`,
+    `${publicUrl}left-overlay-3.png`,
   ];
   const rightImages = [
-    'right-overlay-1.png',
-    'right-overlay-2.png',
-    'right-overlay-3.png',
+    `${publicUrl}right-overlay-1.png`,
+    `${publicUrl}right-overlay-2.png`,
+    `${publicUrl}right-overlay-3.png`,
   ];
 
   const [leftIndex, setLeftIndex] = useState(0);
