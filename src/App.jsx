@@ -6,6 +6,7 @@ import Contact from './pages/contact';
 import ProjectPage from './pages/projects/ProjectPage.jsx';
 import CustomCursor from './components/CustomCursor.jsx';
 import NotFound from './pages/NotFound.jsx';
+import About from './pages/about';
 import './components/CustomCursor.css';
 
 function App() {
@@ -41,6 +42,7 @@ function App() {
         <Route path="/projects" element={<><CustomCursor type={cursorType} /><Projects /></>} />
         <Route path="/projects/:projectName" element={<><CustomCursor type={cursorType} /><ProjectPage /></>} />
         <Route path="/contact" element={<><CustomCursor type="circle" /><Contact /></>} />
+        <Route path="/about" element={<><CustomCursor type={cursorType} /><About /></>} />
         <Route path="*" element={<><CustomCursor type={cursorType} /><NotFound /></>} />
       </Routes>
     </>

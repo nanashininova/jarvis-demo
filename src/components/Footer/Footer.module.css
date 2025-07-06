@@ -96,5 +96,5 @@
 .infoRow:hover {
   color: #b3b3b3;
   transform: translateY(-6px);
-  text-decoration: underline;
+  text-decoration: none;
 }

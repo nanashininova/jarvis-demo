@@ -69,7 +69,7 @@ const Navbar = ({ isHero, isWhiteIntro }) => {
       <div className={styles.desktopMenu}>
         <div className={styles.center}>
           <Link to="/projects" className={styles.link}>Works</Link>
-          <Link to="/" className={styles.link}>About</Link>
+          <Link to="/about" className={styles.link}>About</Link>
           <Link to="/contact" className={styles.link}>Contact</Link>
         </div>
         <a
@@ -102,7 +102,7 @@ const Navbar = ({ isHero, isWhiteIntro }) => {
               &#10005;
             </button>
             <Link to="/projects" className={styles.mobileLink} onClick={() => setMenuOpen(false)}>Works</Link>
-            <Link to="/" className={styles.mobileLink} onClick={() => setMenuOpen(false)}>About</Link>
+            <Link to="/about" className={styles.mobileLink} onClick={() => setMenuOpen(false)}>About</Link>
             <Link to="/contact" className={styles.mobileLink} onClick={() => setMenuOpen(false)}>Contact</Link>
             <a
               href="https://docs.google.com/forms/d/1EWxVoFPi_kHb06HrmCuyrPE2xo_0KPEMyS_D5nOZkRU"

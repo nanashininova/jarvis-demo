@@ -1,0 +1,66 @@
+.memberCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(255,255,255,0.03);
+  border-radius: 18px;
+  padding: 24px 18px 18px 18px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+  width: 210px;
+  max-width: 90vw;
+  margin: 0 2px;
+}
+.memberImage {
+  width: 180px;
+  height: 270px;
+  object-fit: cover;
+  border-radius: 0;
+  margin-bottom: 10px;
+  background: #23243b;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.10);
+}
+.memberName {
+  color: #fff;
+  font-size: 1.08rem;
+  font-weight: 700;
+  margin-bottom: 2px;
+  text-align: center;
+  font-family: 'Fira Mono', 'Menlo', 'Monaco', 'Consolas', monospace;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+.memberPosition {
+  color: #b3b3b3;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-align: center;
+  font-family: 'Fira Mono', 'Menlo', 'Monaco', 'Consolas', monospace;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+.teamGrid {
+  width: 100vw;
+  max-width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 8px;
+  margin-top: 36px;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+@media (max-width: 900px) {
+  .teamGrid {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    margin-top: 18px;
+  }
+  .memberImage {
+    width: 80vw;
+    height: 38vw;
+    max-width: 260px;
+    max-height: 320px;
+  }
+}

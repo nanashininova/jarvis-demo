@@ -22,7 +22,7 @@ const Footer = () => {
             role="button"
           >Works</Link>
           <Link
-            to="/"
+            to="/about"
             className={styles.infoRow}
             tabIndex={0}
             role="button"
