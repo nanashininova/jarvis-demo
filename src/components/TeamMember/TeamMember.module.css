@@ -24,19 +24,21 @@
   font-size: 1.08rem;
   font-weight: 700;
   margin-bottom: 2px;
-  text-align: center;
+  text-align: left;
   font-family: 'Fira Mono', 'Menlo', 'Monaco', 'Consolas', monospace;
   text-transform: uppercase;
   letter-spacing: 0.04em;
+  width: 100%;
 }
 .memberPosition {
   color: #b3b3b3;
   font-size: 0.85rem;
   font-weight: 600;
-  text-align: center;
+  text-align: left;
   font-family: 'Fira Mono', 'Menlo', 'Monaco', 'Consolas', monospace;
   text-transform: uppercase;
   letter-spacing: 0.03em;
+  width: 100%;
 }
 .teamGrid {
   width: 100vw;

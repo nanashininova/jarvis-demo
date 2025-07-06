@@ -41,10 +41,10 @@ const About = () => {
         <h2 className={styles.teamHeading}>DREAM.CREATE.REPEAT</h2>
         <div className={styles.teamSubheading}>MEET THE TEAM</div>
         <div className={styles.teamGrid}>
-          <TeamMember image="/jarvis-demo/about-page-1.png" name="Aarav Sharma" position="President" />
-          <TeamMember image="/jarvis-demo/about-page-2.png" name="Meera Patel" position="Vice President" />
-          <TeamMember image="/jarvis-demo/about-page-3.png" name="Rohan Das" position="Secretary" />
-          <TeamMember image="/jarvis-demo/about-page-1.png" name="Sanya Iyer" position="Treasurer" />
+          <TeamMember image="/jarvis-demo/team-member-1.png" name="XXX" position="Secretary" />
+          <TeamMember image="/jarvis-demo/team-member-2.png" name="XXX" position="Advisor" />
+          <TeamMember image="/jarvis-demo/team-member-3.png" name="XXX" position="Dep Sec" />
+          <TeamMember image="/jarvis-demo/team-member-4.png" name="XXX" position="Legal Advisor" />
         </div>
       </div>
       <hr className={styles.sectionDivider} />
