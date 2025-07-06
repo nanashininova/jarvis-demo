@@ -100,7 +100,20 @@ const ProjectPage = () => {
             </div>
           </div>
         </div>
+
         <p className={styles.description}>{project.description}</p>
+
+        {/* Random Images Section */}
+        <div className={styles.randomImagesSection}>
+          {['/jarvis-demo/about-page-1.png', '/jarvis-demo/about-page-2.png', '/jarvis-demo/about-page-3.png'].map((img, idx) => (
+            <img
+              key={idx}
+              src={img}
+              alt={`Random visual ${idx + 1}`}
+              className={styles.randomImage}
+            />
+          ))}
+        </div>
 
         {/* More Projects Section */}
         <div className={styles.moreProjectsSection}>

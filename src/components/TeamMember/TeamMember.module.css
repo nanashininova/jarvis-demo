@@ -2,22 +2,23 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: rgba(255,255,255,0.03);
   border-radius: 18px;
   padding: 24px 18px 18px 18px;
   box-shadow: 0 2px 16px rgba(0,0,0,0.08);
   width: 210px;
   max-width: 90vw;
   margin: 0 2px;
+  background: none;
 }
 .memberImage {
-  width: 180px;
+  width: 100%;
   height: 270px;
   object-fit: cover;
   border-radius: 0;
   margin-bottom: 10px;
-  background: #23243b;
+  background: none;
   box-shadow: 0 2px 12px rgba(0,0,0,0.10);
+  display: block;
 }
 .memberName {
   color: #fff;
