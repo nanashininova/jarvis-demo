@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from 'react-router-dom';
 import styles from "./FutureWorksSection.module.css";
 import FutureWork from "../../../components/FutureWork/FutureWork.jsx";
 
@@ -31,6 +32,7 @@ const works = [
 
 
 const FutureWorksSection = () => {
+  const navigate = useNavigate();
   // Fire custom events on mouse enter/leave
   const handleMouseEnter = () => {
     window.dispatchEvent(new Event('futureworks-cursor-enter'));
@@ -56,7 +58,7 @@ const FutureWorksSection = () => {
       ))}
       <button
         className={styles.moreWorksBtn}
-        onClick={() => window.location.href = '/projects'}
+        onClick={() => navigate('/projects')}
       >
         <span>More Works</span>
         <span className={styles.arrow}>&rarr;</span>

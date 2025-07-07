@@ -8,6 +8,7 @@ import CustomCursor from './components/CustomCursor.jsx';
 import NotFound from './pages/NotFound.jsx';
 import About from './pages/about';
 import './components/CustomCursor.css';
+import './global-bg.css';
 
 function App() {
   const [cursorType, setCursorType] = React.useState('circle');
